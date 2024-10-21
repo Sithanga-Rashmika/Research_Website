@@ -5,6 +5,7 @@ import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
+import { Technologies } from "./components/Technologies";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
 import { Pricing } from "./components/Pricing";
@@ -13,30 +14,10 @@ import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
-import Timeline from './components/Timeline';
+import { Milestone } from "./components/Milestone";
 
 import "./App.css";
 import LiteratureSurvey from "./components/LiteratureSurvey";
-
-
-
-const timelineItems = [
-  {
-    time: 'March 2023',
-    title: 'Project Kickoff',
-    description: 'Initial planning and project kickoff with the team.',
-  },
-  {
-    time: 'June 2023',
-    title: 'Development Phase',
-    description: 'Began development on the core features of the application.',
-  },
-  {
-    time: 'September 2023',
-    title: 'Launch',
-    description: 'Successfully launched the application to the public.',
-  },
-];
 
 function App() {
   return (
@@ -47,11 +28,10 @@ function App() {
       <Sponsors />
       <About />
       <HowItWorks />
-      <div className="container mx-auto p-6">
-      <Timeline items={timelineItems} />
-      </div>
+      <Technologies />
       <Features />
       <Services />
+      <Milestone />
       <Cta />
       <Testimonials />
       <Team />
