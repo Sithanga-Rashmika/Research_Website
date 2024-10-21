@@ -36,6 +36,7 @@ function App() {
       <Testimonials />
       <Team />
       <Pricing />
+      <LiteratureSurvey />
       <Newsletter />
       <FAQ />
       <Footer />
