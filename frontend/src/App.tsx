@@ -16,6 +16,7 @@ import { Testimonials } from "./components/Testimonials";
 import Timeline from './components/Timeline';
 
 import "./App.css";
+import LiteratureSurvey from "./components/LiteratureSurvey";
 
 
 
@@ -42,6 +43,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+    
       <Sponsors />
       <About />
       <HowItWorks />
