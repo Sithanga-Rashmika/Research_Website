@@ -1,32 +1,29 @@
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import mockupImage from "../assets/mockup.png"; 
+import mockupImage from "../assets/home.png";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section className="container grid lg:grid-cols-2 place-items-center gap-10"> {/* Reduced padding */}
       {/* Left side: Text and Call-to-Action buttons */}
-      <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
+      <div className="text-center lg:text-start space-y-6"> {/* Adjusted padding on the text side */}
+        <main className="text-5xl md:text-8xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
+            <span className="inline bg-gradient-to-r from-primary to-primary-dark text-transparent bg-clip-text opacity-110">
+              Navigate   
             </span>{" "}
-            landing page
-          </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2>
+            life,{" "}
+            <h2 className="inline">
+              <span className="inline bg-gradient-to-r from-primary to-primary-dark text-transparent bg-clip-text opacity-110">
+                Confidently
+              </span>
+            </h2>
+          </h1>
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          for your project.
+          BlindSafe is your personal guide to independence, transforming how the visually impaired interact with the world. From navigating public transport to identifying medications, detecting falls, and assessing injuries, we blend cutting-edge technology with intuitive design to empower every journey you take.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
@@ -46,11 +43,11 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Right side: Mockup image with shadow effect */}
+      {/* Right side: Mockup image with even larger size */}
       <div className="z-10 relative">
         {/* Mockup Image */}
-        <div className="relative max-w-xs md:max-w-sm lg:max-w-md mx-auto shadow-2xl rounded-xl">
-        <img src={mockupImage} alt="App Mockup" className="rounded-lg shadow-lg" />
+        <div className="relative w-full w-[800px] mx-auto rounded-xl">
+          <img src={mockupImage} alt="App Mockup" className="w-full h-auto rounded-lg" />
         </div>
       </div>
     </section>

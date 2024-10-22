@@ -17,7 +17,6 @@ import { Team } from "./components/Team";
 import { Milestone } from "./components/Milestone";
 import { Documents } from "./components/Documents";
 import { Presentation } from "./components/Presentation";
-
 import "./App.css";
 import LiteratureSurvey from "./components/LiteratureSurvey";
 
