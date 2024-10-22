@@ -99,7 +99,7 @@ export const Technologies = () => {
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
                 <img
-                  src={`http://localhost:5173/images/${icon}`}
+                  src={`https://blindsafe.netlify.app/images/${icon}`}
                   style={{
                     borderRadius: "50%",
                     objectFit: "cover",
